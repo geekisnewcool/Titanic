@@ -1,0 +1,18 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Jan 15 19:44:40 2018
+
+@author: bhupe
+"""
+
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+
+
+import os
+os.chdir('C:/Users/bhupe/Desktop/EXL_EQ')
+
+df=pd.read_csv('Data1.csv',header=1)
+grouped_data=df['lat'].groupby(df['Shopper_ID'])
+grouped_data1=df['lng'].groupby(df['Shopper_ID'])
